@@ -770,6 +770,13 @@ h3.my-profession
 {
     height: 50px;
     padding: 0 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .btn:hover
+{
+   transform: scale(1.05);
 }
 
 @media (max-width:1199px)
