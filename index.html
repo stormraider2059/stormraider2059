@@ -364,44 +364,87 @@
           
           <div class="row">
             <div class="contact-form padd-15">
+              <form action="javascript:sendmail()" method="post">
               <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" placeholder="Name" name="Name" id="Name" required="required">
                   </div>
                 </div>
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Email" name="Sender" id="Email" required="required">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Subject">
+                    <input type="text" class="form-control" placeholder="Subject" name="Subject" id="Subject" required="required">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <textarea name="" class="form-control" id=""  placeholder="Message"></textarea>
+                    <textarea name="" class="form-control" id="Message"  placeholder="Message" name="Message"
+                     required="required"></textarea>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
-                  <button type="submit" class="btn">Send</button>
+                  <button type="submit" class="btn" name=""   value="Send">Send</button>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </div>
   </div>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script> 
+<script>  
 
+     function sendmail(){
+    
+      var name = $("#Name").val();
+      var email = $("#Email").val();
+      var subject = $("#Subject").val();
+      var message = $("#Message").val();
+      var Body='Name: '+name+'<br>Email: '+email+' <br>Subject: '+subject+' <br>Message: '+message;
+      
+          
+      Email.send({
+        
+        SecureToken:"fe3b342f-0f9d-4c9d-ba45-ae36b17ea099",
+        To:'a2web007@gmail.com',
+                From:"maila2web@gmail.com",
+                Subject : "New mail on Contact from:"+name,
+        Body: Body
+      }).then(
+        message =>{
+          
+          if(message=='OK'){
+          alert('Your mail has been sent. Thank you for connecting.');
+          }
+          else{
+            console.error (message);
+            alert('An error occured while sending your message.')
+            
+          }
+
+        }
+      );
+    }
+    
+    </script>
+    </script>
   <div class="style-switcher">
     <div class="style-switcher-toggler s-icon">
       <i class="fas fa-cog fa-spin"></i>
