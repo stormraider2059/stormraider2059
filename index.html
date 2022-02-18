@@ -324,6 +324,7 @@
       </section>
     
       <section class="contact section" id="contact">
+        <form action="javascript:sendmail()" method="post">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -364,7 +365,7 @@
           
           <div class="row">
             <div class="contact-form padd-15">
-              <form action="javascript:sendmail()" method="post">
+              
               <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
@@ -397,10 +398,11 @@
                   <button type="submit" class="btn" name=""   value="Send">Send</button>
                 </div>
               </div>
-              </form>
+              
             </div>
           </div>
         </div>
+      </form>
       </section>
     </div>
   </div>
@@ -431,10 +433,12 @@
       }).then(
         message =>{
           
-          if(message=='OK'){
+          if(message=='OK')
+          {
           alert('Your mail has been sent. Thank you for connecting.');
           }
-          else{
+          else
+          {
             console.error (message);
             alert('An error occured while sending your message.')
             
@@ -443,8 +447,11 @@
         }
       );
     }
-    
+
     </script>
+    </script>
+  
+
     
   <div class="style-switcher">
     <div class="style-switcher-toggler s-icon">
