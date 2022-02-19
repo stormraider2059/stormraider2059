@@ -325,6 +325,7 @@
 
     
       <section class="contact section" id="contact">
+        <form action="javascript:sendmail()" method="post">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -360,12 +361,13 @@
             </div>
             
           </div>
+
           <h3 class="contact-title padd-15">Send a quick mail</h3>
           <h4 class="contact-sub-title padd-15">I'LL RESPOND AS SOON AS POSSIBLE</h4>
           
           <div class="row">
             <div class="contact-form padd-15">
-              <form action="javascript:sendmail()" method="post">
+              
                <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
@@ -397,15 +399,12 @@
                 <div class="form-item col-12 padd-15">
                   <button type="submit" class="btn" name="" >Send</button>
                 </div>
-               </div>
-              </form>
+               </div> 
             </div>
           </div>
-        
         </div>
-        
+        </form>
       </section>
-    
     </div>
   </div>
 
@@ -440,7 +439,7 @@
           }
           else{
             console.error (message);
-            alert('An error occured while sending your message.')
+            alert('An error occured while sending your message. Please try again.')
             
           }
 
