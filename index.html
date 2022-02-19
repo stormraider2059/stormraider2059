@@ -416,10 +416,10 @@
 
      function sendmail(){
     
-      var name = $("#Name").val();
-      var email = $("#Email").val();
-      var subject = $("#Subject").val();
-      var message = $("#Message").val();
+      var name = $('#Name').val();
+      var email = $('#Email').val();
+      var subject = $('#Subject').val();
+      var message = $('#Message').val();
       var Body='Name: '+name+'<br>Email: '+email+' <br>Subject: '+subject+' <br>Message: '+message;
       
           
@@ -427,7 +427,7 @@
         
         SecureToken:"fe3b342f-0f9d-4c9d-ba45-ae36b17ea099",
         To:'stormraider2059@gmail.com',
-                From:"maila2web@gmail.com",
+                From:'maila2web@gmail.com',
                 Subject : "New mail on Contact from:"+name,
         Body: Body
       }).then(
@@ -445,7 +445,7 @@
         }
       );
     }
-
+</script>
   </script>
   
   <div class="style-switcher">
