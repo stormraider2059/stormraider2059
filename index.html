@@ -378,33 +378,26 @@
                <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name" name="Name" id="Name" required="required">
+                    <input type="text" class="form-control" placeholder="Name" name="Name" id="name" required="required">
                   </div>
                 </div>
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" name="Sender" id="Email" required="required">
+                    <input type="email" class="form-control" placeholder="Email" name="Sender" id="mail" required="required">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Subject" name="Subject" id="Subject" required="required">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <textarea name="" class="form-control" id="Message"  placeholder="Message" name="Message"
+                    <textarea name="" class="form-control" id="message"  placeholder="Message" name="Message"
                      required="required"></textarea>
                   </div>
                 </div>
                </div>
                <div class="row">
                 <div class="form-item col-12 padd-15">
-                  <button type="submit" class="btn" name="" >Send</button>
+                  <button type="submit" class="btn" id="send-btn" >Send</button>
                 </div>
                </div> 
             </div>
@@ -414,13 +407,43 @@
       </section>
     </div>
   </div>
-
+<script>
+  const submitButton = document.getElementById("send-btn")
+  submitButton.addEventListener("click", () => {
+    handleForm()
+  })
+  const handleForm = async() => {
+    const name = document.getElementById("name").value 
+    const email = document.getElementById("mail").value
+    const message = document.getElementById("message").value
+    const inboxMessage = {name, email, message}
+    try {
+      const request = await fetch("https://suyogdahalapi.herokuapp.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(inboxMessage)
+      })
+      const result = await request.json();
+      if(result.success) {
+        alert("Form Submitted")
+        document.getElementById("name").value = ""
+        document.getElementById("mail").value = ""
+        document.getElementById("message").value = ""
+      } else 
+          alert("An error occured")
+    } catch(error) {
+      console.log(error)
+    }
+  }
+</script>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script> 
-<script>  
+<!-- <script>  
 
      function sendmail(){
     
@@ -453,7 +476,7 @@
         }
       );
     }
-  </script>
+  </script> -->
 </script>
   
   
