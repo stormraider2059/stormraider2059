@@ -948,3 +948,16 @@ h3.my-profession
 #container > .loading-hide {
     display: none;
 }
+@media screen and (max-width: 650px) {
+    #loading > .loading-content {
+        height: 150px;
+        width: 150px;
+    }
+    #loading >.loading-content > span,
+    #loading>.loading-content::after,
+    #loading>.loading-content::before
+     {
+        height: 150px;
+        width: 150px;
+    }
+}
