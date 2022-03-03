@@ -876,4 +876,75 @@ h3.my-profession
         max-width: 100%;
     }
 }
-
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #576574;
+    z-index: 14;
+}
+#loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 15;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#loading > .loading-content {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-top: 10px solid #ff6b6b;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+#loading >.loading-content::after{
+    transform: rotate(120deg);
+    border-top: 10px solid #feca57;
+}
+#loading > .loading-content::before{
+    transform: rotate(240deg);
+    border-top: 10px solid #48dbfb;
+}
+#loading>.loading-content::after,
+#loading>.loading-content::before{
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* background: #fff; */
+    border-radius: 50%;
+}
+#loading >.loading-content > span{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: rgb(0, 0, 0);
+    animation: a2 2s linear infinite;
+}
+@keyframes a2 {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+#container > .loading-hide {
+    display: none;
+}
