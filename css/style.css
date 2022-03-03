@@ -938,6 +938,7 @@ h3.my-profession
     text-align: center;
     line-height: 200px;
     color: rgb(0, 0, 0);
+    font-size: 1.2rem;
     animation: a2 2s linear infinite;
 }
 @keyframes a2 {
@@ -950,14 +951,29 @@ h3.my-profession
 }
 @media screen and (max-width: 650px) {
     #loading > .loading-content {
-        height: 150px;
-        width: 150px;
+        height: 160px;
+        width: 160px;
     }
     #loading >.loading-content > span,
     #loading>.loading-content::after,
     #loading>.loading-content::before
      {
-        height: 150px;
-        width: 150px;
+        font-size: 1rem;
+        height: 160px;
+        width: 160px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #loading > .loading-content {
+        height: 140px;
+        width: 140px;
+    }
+    #loading >.loading-content > span,
+    #loading>.loading-content::after,
+    #loading>.loading-content::before
+     {
+        font-size: 0.8rem;
+        height: 140px;
+        width: 140px;
     }
 }
