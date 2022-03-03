@@ -905,6 +905,15 @@ h3.my-profession
     border-top: 10px solid #ff6b6b;
     border-radius: 50%;
     animation: animate 2s linear infinite;
+    position: relative;
+    text-align: center;
+}
+#loading > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -25px;
 }
 @keyframes animate {
     to{
@@ -930,16 +939,7 @@ h3.my-profession
     /* background: #fff; */
     border-radius: 50%;
 }
-#loading >.loading-content > span{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    animation: a2 2s linear infinite;
-}
+
 @keyframes a2 {
     to{
         transform: rotate(-360deg);
@@ -953,7 +953,7 @@ h3.my-profession
         height: 160px;
         width: 160px;
     }
-    #loading >.loading-content > span,
+    #loading > span,
     #loading>.loading-content::after,
     #loading>.loading-content::before
      {
@@ -961,6 +961,12 @@ h3.my-profession
         height: 160px;
         width: 160px;
     }
+    #loading > span {
+        margin-top: -20px;
+    }
+}
+#loading> .loading-button > #loading-btn {
+    cursor: pointer;
 }
 @media screen and (max-width: 350px) {
     #loading > .loading-content {
@@ -974,5 +980,8 @@ h3.my-profession
         font-size: 10px;
         height: 140px;
         width: 140px;
+    }
+    #loadig > span {
+        margin-top: -17px;
     }
 }
