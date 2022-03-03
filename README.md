@@ -1,4 +1,4 @@
-h1 align="center">Hi 👋, I'm Suyog Dahal aka stormraider.....</h1>
+<h1 align="center">Hi 👋, I'm Suyog Dahal aka stormraider.....</h1>
 <h3 align="center">I’m interested in web desiging/developing...</h3>
 
 - 🌱 I’m currently working on **front end web development projects emphasizing on HTML, JavaScript & CSS ...**
@@ -7,7 +7,7 @@ h1 align="center">Hi 👋, I'm Suyog Dahal aka stormraider.....</h1>
 
 - 👯 I’m looking to collaborate on **IT/Software Company...**
 
-- 👨‍💻 All of my projects are available at [https://stormraider2059.github.io/suyogdahal/](https://stormraider2059.github.io/suyogdahal/)
+- 👨‍💻 All of my projects are available at [https://stormraider2059.github.io/stormraider2059/](https://stormraider2059.github.io/stormraider2059/)
 
 - 📫 Hit me with a mail on **stormraider2059@gmail.com**
 
