@@ -902,7 +902,6 @@ h3.my-profession
     border-radius: 15%;
     color: #000;
     font-size: 1.2rem;
-    font-weight: bold;
     border-top: 10px solid #ff6b6b;
     border-radius: 50%;
     animation: animate 2s linear infinite;
@@ -958,7 +957,7 @@ h3.my-profession
     #loading>.loading-content::after,
     #loading>.loading-content::before
      {
-        font-size: 1rem;
+        font-size: 12px;
         height: 160px;
         width: 160px;
     }
@@ -972,7 +971,7 @@ h3.my-profession
     #loading>.loading-content::after,
     #loading>.loading-content::before
      {
-        font-size: 0.8rem;
+        font-size: 10px;
         height: 140px;
         width: 140px;
     }
