@@ -1,13 +1,13 @@
 <h1 align="center">Hi 👋, I'm Suyog Dahal aka stormraider.....</h1>
 <h3 align="center">I’m interested in web desiging/developing...</h3>
 
-- 🌱 I’m currently working on **front end web development projects emphasizing on HTML, JavaScript & CSS ...**
+- 🌱 I have knowledge of front end web development focusing HTML, CSS and JavaScript ...**
 
-- 🌱 I’m currently learning **Tailwind CSS & JavaScript...**
+- 🌱 I’m currently learning **Python for backend deveopment using django and flask, also have knowledge of GUI development using Tkinter...**
 
 - 👯 I’m looking to collaborate on **IT/Software Company...**
 
-- 👨‍💻 All of my projects are available at [https://stormraider2059.github.io/stormraider2059/](https://stormraider2059.github.io/stormraider2059/)
+- 👨‍💻 All of my projects are available at [https://www.anishdahal2059.com.np])
 
 - 📫 Hit me with a mail on **stormraider2059@gmail.com**
 
