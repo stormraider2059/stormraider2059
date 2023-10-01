@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Anish Dahal .....</h1>
-<h3 align="center">I’m interested in web desiging/developing...</h3>
+<h3 align="center">I’m interested in Web Desiging/Developing...</h3>
 
-- 🌱 I have knowledge of front end web development focusing **HTML, CSS and JavaScript ...**
+- 🌱 I have knowledge of Front-End Web Development focusing **HTML, CSS and JavaScript ...**
 
-- 🌱 I’m currently learning **Python for backend deveopment using django and flask, also have knowledge of GUI development using Tkinter...**
+- 🌱 I’m currently learning **Python for Back-End Web Deveopment using django and flask... I also have knowledge of GUI development using Tkinter...**
 
-- 👯 I’m looking to collaborate on **IT/Software Company...**
+- 👯 I’m looking to collaborate on **idk maybe IT/Software Company lol...**
 
 - 👨‍💻 All of my projects are available at https://www.anishdahal2059.com.np
 
