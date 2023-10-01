@@ -7,7 +7,7 @@
 
 - 👯 I’m looking to collaborate on **IT/Software Company...**
 
-- 👨‍💻 All of my projects are available at [https://www.anishdahal2059.com.np]
+- 👨‍💻 All of my projects are available at https://www.anishdahal2059.com.np
 
 - 📫 Hit me with a mail on **stormraider2059@gmail.com**
 
