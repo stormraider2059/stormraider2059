@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Suyog Dahal aka stormraider.....</h1>
+<h1 align="center">Hi 👋, I'm Anish Dahal .....</h1>
 <h3 align="center">I’m interested in web desiging/developing...</h3>
 
 - 🌱 I have knowledge of front end web development focusing **HTML, CSS and JavaScript ...**
